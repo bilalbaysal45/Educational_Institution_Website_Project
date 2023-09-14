@@ -8,7 +8,7 @@ $("#btn-profile").click(() => {
 function resizeMyDropdown() {
     if ($("body").width() < 992) {
         $("#my-dropdown").remove();
-        $("#btn-profile").after(` <div id="my-dropdown" class="me-sm-3">
+        $("#btn-profile").after(` <div id="my-dropdown" class="me-sm-3" style="display:none;">
                                     <div id="dropdown-profile" class="d-flex justify-content-end s-w-dropdown">
                                         <ul class="profile-items profile-grid-2">
                                             <li class="profile-item">

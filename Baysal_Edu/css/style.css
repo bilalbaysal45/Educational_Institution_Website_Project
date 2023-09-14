@@ -2,7 +2,7 @@
     --color-primary: #94B49F;
     --color-secondary: #CEE5D0;
     --color-menu-bg: #FCF8E8;
-    --color-orange: #ECB390;
+    --color-orange: #e69d6f;
 }
 
 
@@ -12,7 +12,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    /* background-color: var(--color-secondary); */
+    background-image: url(/images/bg-photo.jpg);
+}
 .bg-menu {
     background-color: var(--color-menu-bg);
 }
@@ -20,6 +23,7 @@
 #menu li>a {
     color: var(--color-primary);
 }
+
 /* #dropdown-profile{
     position: absolute;
     right: 0;
@@ -29,20 +33,24 @@
     color: var(--color-primary);
 
 }
+
 .profile-items {
     display: grid;
     grid-gap: 2px;
     background-color: var(--color-secondary);
-    border: var(--color-orange) solid 1px;
+    /* border: var(--color-orange) solid 1px; */
     list-style: none;
     padding-left: 0;
 }
-.profile-grid-1{
+
+.profile-grid-1 {
     grid-template-columns: repeat(1, 1fr);
 }
+
 .profile-grid-2 {
     grid-template-columns: repeat(2, 1fr);
 }
+
 .profile-item {
     display: flex;
     width: 100px;
@@ -50,21 +58,60 @@
     justify-content: center;
     align-items: center;
     border: #94B49F solid 1px;
+    border-radius: 5px;
     background-color: var(--color-secondary);
     cursor: pointer;
     font-weight: bold;
 }
-.profile-item a{
+
+.profile-item a {
     color: var(--color-primary);
     text-decoration: none;
-    
+
 }
+
+.s-w-dropdown {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
 .home-bg {
     width: 100%;
-    height: 50vh;
-    background-image: url(/images/bg-photo.jpg);
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(/images/bg-photo.jpg); */
+    
 }
-.s-w-dropdown{
-    padding-left: 5px;
-    padding-top: 5px;    
+.home-bg h1{
+    text-shadow: 0 0 7px black ;
+    opacity: .8;
+}
+.img-cover{
+   height: 40vh;
+}
+.my-footer{
+    color: var(--color-primary);
+}
+.general-info{
+    width: 75%;
+    height: 200px;
+    margin: 15px auto;
+    background-color: var(--color-menu-bg);
+}
+.card-my-bg{
+    background-color: var(--color-secondary);
+    color: var(--color-orange);
+    opacity: .9;
+}
+.general-my-bg {
+    background-color: var(--color-secondary);
+    color: var(--color-orange);
+    opacity: .9;
+}
+.general-my-bg:hover{
+    opacity: 1;
+}
+.card-my-bg:hover{
+    opacity: 1;
 }
