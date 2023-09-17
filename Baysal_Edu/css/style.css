@@ -1,9 +1,11 @@
 :root {
-    --color-primary: #94B49F;
-    --color-secondary: #CEE5D0;
-    --color-menu-bg: #FCF8E8;
-    --color-orange: #e69d6f;
-    --color-body-bg: rgb(7, 99, 11);
+    --color-primary: #5375e2;
+    --color-secondary: #f65868;
+    --color-menu-bg: #5c616e;
+    --color-menu-bg-lighter:#7791a1;
+    --color-orange: #f3aa92;
+    --color-light : #ffffff;
+    --color-body-bg: rgb(209, 206, 199);
 }
 
 
@@ -16,7 +18,6 @@
 body{
     background-color: var(--color-body-bg);
     /* background-image: url(/images/bg-photo.jpg); */
-    background-repeat: no-repeat;
 }
 .bg-menu {
     background-color: var(--color-menu-bg);
@@ -25,7 +26,10 @@ body{
 #menu li>a {
     color: var(--color-primary);
 }
-
+#menu li:hover{
+    background-color: var(--color-menu-bg-lighter);
+    transition: background-color .3s linear .1s;
+}
 /* #dropdown-profile{
     position: absolute;
     right: 0;
@@ -35,10 +39,15 @@ body{
     color: var(--color-primary);
 
 }
-
+#btn-profile:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-menu-bg);
+    opacity: .5;
+    border: 1px solid var(--color-menu-bg);
+}
 .profile-items {
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 1px;
     background-color: var(--color-secondary);
     /* border: var(--color-orange) solid 1px; */
     list-style: none;
@@ -60,10 +69,15 @@ body{
     justify-content: center;
     align-items: center;
     border: #94B49F solid 1px;
-    border-radius: 5px;
-    background-color: var(--color-secondary);
+    border-radius: 3px;
+    /* background-color: var(--color-secondary); */
     cursor: pointer;
     font-weight: bold;
+    opacity: .5;
+}
+.profile-item:hover{
+    opacity: 1;
+    transition: all .3s linear .1s;
 }
 
 .profile-item a {
@@ -137,6 +151,10 @@ body{
     transition: opacity 1s linear;
 }
 
+.slide h2, .slide p{
+    color: var(--color-orange);
+}
+
 .slide img {
     width: 100%;
     height: 100%;
@@ -179,4 +197,39 @@ body{
 
 .indicators button:hover {
     opacity: .7;
+}
+.my-blog-img{
+    object-fit: cover;
+    width: 100%;
+    height: 40%;
+    
+}
+.articles{
+    background-color: var(--color-light);
+    border: 1px ridge var(--color-secondary);
+    margin: 3px auto;
+    height: 100%;
+}
+
+.nav-blog{
+    
+    height: 5.4%;
+    margin-top: 5px;
+
+}
+
+.nav-blog a{
+    width: 150px;
+    color: var(--color-orange);
+    background-color: var(--color-light);
+    margin-left: 2px;
+    border: 1px solid var(--color-orange);
+}
+.nav-blog a:hover{
+    color: var(--color-orange);
+}
+.my-active{
+    color: var(--color-primary) !important;
+    background-color: var(--color-body-bg) !important;
+    border: 1px solid var(--color-light) !important;
 }
