@@ -3,7 +3,6 @@ const slides = document.querySelectorAll(".slide");
 const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
 const articleSqlList = $(".article-sql");
-console.log(articleSqlList[0])
 
 let autoSlider = true;
 let intervalTime = 3000;
@@ -119,7 +118,7 @@ $("#btn-csharp").click((e) => {
     $("#btn-html-css-js").removeClass("my-active");
     $("#btn-all").removeClass("my-active");
 
-    
+
     if (!$(".article-sql").hasClass("d-none")){
         $(".article-sql").addClass("d-none");
     }
@@ -179,7 +178,73 @@ $("#btn-all").click((e) => {
 
 });
 
+function openSideNav() {
+    document.getElementById("my-Side-nav").style.width = "250px";
+}
 
+function closeSideNav() {
+    document.getElementById("my-Side-nav").style.width = "0";
+}
 
+$("#side-nav-edu-calendar").click(() => {
+    if($("#edu-calendar").hasClass("d-none")){
+        $("#edu-calendar").removeClass("d-none");
+    }
+    if (!$("#precondition").hasClass("d-none")) {
+        $("#precondition").addClass("d-none");
+    }
+    if (!$("#certificate").hasClass("d-none")) {
+        $("#certificate").addClass("d-none");
+    }
+    if (!$("#edu-content").hasClass("d-none")) {
+        $("#edu-content").addClass("d-none");
+    }
+});
+$("#side-nav-precondition").click(() => {
+    if (!$("#edu-calendar").hasClass("d-none")) {
+        $("#edu-calendar").addClass("d-none");
+    }
+    if ($("#precondition").hasClass("d-none")) {
+        $("#precondition").removeClass("d-none");
+    }
+    if (!$("#certificate").hasClass("d-none")) {
+        $("#certificate").addClass("d-none");
+    }
+    if (!$("#edu-content").hasClass("d-none")) {
+        $("#edu-content").addClass("d-none");
+    }
+});
+$("#side-nav-certificate").click(() => {
+    if (!$("#edu-calendar").hasClass("d-none")) {
+        $("#edu-calendar").addClass("d-none");
+    }
+    if (!$("#precondition").hasClass("d-none")) {
+        $("#precondition").addClass("d-none");
+    }
+    if ($("#certificate").hasClass("d-none")) {
+        $("#certificate").removeClass("d-none");
+    }
+    if (!$("#edu-content").hasClass("d-none")) {
+        $("#edu-content").addClass("d-none");
+    }
+});
+$("#side-nav-edu-content").click(() => {
+    if (!$("#edu-calendar").hasClass("d-none")) {
+        $("#edu-calendar").addClass("d-none");
+    }
+    if (!$("#precondition").hasClass("d-none")) {
+        $("#precondition").addClass("d-none");
+    }
+    if (!$("#certificate").hasClass("d-none")) {
+        $("#certificate").addClass("d-none");
+    }
+    if ($("#edu-content").hasClass("d-none")) {
+        $("#edu-content").removeClass("d-none");
+    }
+});
+// <a id="side-nav-edu-calendar" href="">Eğitim Takvimi</a>
+//                 <a id="side-nav-precondition" href="">Ön Koşul</a>
+//                 <a id="side-nav-certificate" href="">Sertifika</a>
+//                 <a id="side-nav-edu-content" href="">Eğitim İçeriği</a>
 
 againInterval();
