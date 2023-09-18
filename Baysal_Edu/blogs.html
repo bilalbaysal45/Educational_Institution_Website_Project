@@ -32,7 +32,7 @@
                                 Educations
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">C# Eğitimi</a></li>
+                                <li><a class="dropdown-item" href="/Educations/csharpEducation.html">C# Eğitimi</a></li>
                                 <li><a class="dropdown-item" href="#">SQL Eğitimi</a></li>
                                 <li><a class="dropdown-item" href="#">HTML, JavaScript, CSS Eğitimi</a></li>
                             </ul>
@@ -71,9 +71,30 @@
                 </ul>
             </div>
         </div>
-        <main class="container mt-5 pt-2 my-blog">
+        <!-- Articles -->
+        <main class="container pt-2 my-blog">
             <div class="row">
-                <div class="col-lg-6 col-12 articles">
+                <div class="row col-lg-5 col-12">
+                    <img src="/images/forblog-img.jpeg" alt="">
+                    <nav class="navbar navbar-expand-lg nav-blog">
+                        <div class="container-fluid p-0">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a id="btn-all" class="nav-link my-active" aria-current="page" href="#">Tümü</a>
+                                    <a id="btn-csharp" class="nav-link" aria-current="page" href="#">C#</a>
+                                    <a id="btn-sql" class="nav-link" href="#">SQL</a>
+                                    <a id="btn-html-css-js" class="nav-link" href="#">HTML,CSS,JS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-6 col-12 articles article-csharp">
                     <img class="my-blog-img" src="/images/csharp.jpg" alt="">
                     <h2>C# ile ilgili Bİlgiler</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat officia facere asperiores
@@ -85,63 +106,71 @@
                         provident, animi nesciunt, quas fugit architecto fugiat illo officiis soluta quisquam inventore
                         dolores ab repellat? Magnam et eum labore tenetur perferendis!</p>
                 </div>
-                <div class="row col-lg-5 col-12">
-                    <img src="/images/forblog-img.jpeg" alt="">
-                    <nav class="navbar navbar-expand-lg nav-blog">
-                        <div class="container-fluid p-0">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
-                                    <a class="nav-link my-active" aria-current="page" href="#">C#</a>
-                                    <a class="nav-link" href="#">SQL</a>
-                                    <a class="nav-link" href="#">HTML,CSS,JS</a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
+                <div class="col-lg-6 col-12 articles article-sql">
+                    <h2>SQL ile ilgili Makale</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus fugiat, eos culpa qui
+                        esse, magni laudantium nemo
+                        praesentium corrupti consequatur neque doloremque nobis sit dolorum dignissimos amet
+                        dolores laboriosam, assumenda
+                        mollitia nulla quia quas. Blanditiis perferendis, explicabo tempora deserunt eveniet
+                        vitae et! Possimus, recusandae
+                        voluptate! Alias magnam id sequi quos aliquid, quas non veritatis asperiores hic
+                        perspiciatis quia repellat cupiditate,
+                        fuga, necessitatibus eaque. Ea, modi laboriosam sint praesentium inventore eveniet
+                        aperiam! Libero perferendis enim ex
+                        soluta fugiat cupiditate doloremque possimus in et, ducimus eum illum eaque
+                        reprehenderit dolores ea. Minima at placeat
+                        reprehenderit asperiores assumenda doloribus suscipit molestiae praesentium consequatur?
+                    </p>
                 </div>
-                <div class="row mb-5 pb-3">
-                    <div class="col-lg-3 col-12 articles">
-                        <h2>CSS ile ilgili Makale</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt omnis voluptatem, suscipit velit, officia
-                        fugiat enim quis quasi, possimus doloribus voluptate facere autem xercitationem! Modi dolorem repellendus praesentium
-                        esse eum earum laboriosam magnam, iure, expedita quisquam perspiciatis saepe voluptatem nemo. Debitis modi, ullam
-                        consectetur pariatur hic aliquid libero illum deleniti itaque voluptate! Qui quidem nihil id numquam a natus provident praesentium esse eum earum laboriosam magnam, iure, expedita praesentium esse eum earum laboriosam magnam, iure, expedita praesentium esse eum earum laboriosam magnam, iure, expedita
-                        perferendis veniam. Aperiam consectetur at sit quos corrupti doloribus id magni aliquam neque quidem.</p>
-                    </div>
-                    <div class="row col-lg-6 col-12">
-                        <div class="col-lg-5 col-12 articles mx-2">
-                            <h2>JavaScript ile ilgili Makale</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt omnis                          voluptatem, suscipit velit, officia fugiat enim quis quasi, possimus doloribus voluptate facere autem xercitationem! Modi dolorem repellendus praesentium esse eum earum laboriosam magnam, iure, expedita quisquam perspiciatis saepe voluptatem nemo. Debitis modi, ullam consectetur pariatur hic aliquid libero illum deleniti itaque voluptate! Qui quidem nihil id numquam a natus provident perferendis veniam. Aperiam consectetur at sit quos corrupti doloribus id magni aliquam neque quidem.</p>
-                        </div>
-                        <div class="col-lg-5 col-12 articles">
-                            <h2>JavaScript ile ilgili Makale</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt omnis
-                                voluptatem,
-                                suscipit velit,
-                                officia
-                                fugiat enim quis quasi, possimus doloribus voluptate facere autem exercitationem! Modi
-                                dolorem repellendus
-                                praesentium esse eum earum laboriosam magnam, iure, expedita quisquam perspiciatis saepe
-                                voluptatem nemo.
-                                Debitis
-                                modi, ullam consectetur pariatur hic aliquid libero illum deleniti itaque voluptate! Qui
-                                quidem nihil id numquam
-                                a
-                                natus provident perferendis veniam. Aperiam consectetur at sit quos corrupti doloribus
-                                id
-                                magni aliquam neque
-                                quidem.</p>
-                        </div>
-                    </div>
+                <div class="col-lg-5 col-12 articles article-sql">
+                    <h2>SQL ile ilgili Makale</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus fugiat, eos culpa qui
+                        esse, magni laudantium nemo praesentium corrupti consequatur neque doloremque nobis sit
+                        dolorum dignissimos amet dolores laboriosam, assumenda mollitia nulla quia quas.
+                        Blanditiis perferendis, explicabo tempora deserunt eveniet vitae et! Possimus,
+                        recusandae voluptate! Alias magnam id sequi quos aliquid, quas non veritatis asperiores
+                        hic perspiciatis quia repellat cupiditate, fuga, necessitatibus eaque. Ea, modi
+                        laboriosam sint praesentium inventore eveniet aperiam! Libero perferendis enim ex soluta
+                        fugiat cupiditate doloremque possimus in et, ducimus eum illum eaque reprehenderit
+                        dolores ea. Minima at placeat reprehenderit asperiores assumenda doloribus suscipit
+                        molestiae praesentium consequatur?</p>
                 </div>
-
+                <div class="col-lg-6 col-12 articles article-frontend">
+                    <h2>CSS ile ilgili Makale</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt omnis
+                        voluptatem, suscipit velit,
+                        officia
+                        fugiat enim quis quasi, possimus doloribus voluptate facere autem xercitationem! Modi
+                        dolorem repellendus
+                        praesentium
+                        esse eum earum laboriosam magnam, iure, expedita quisquam perspiciatis saepe voluptatem
+                        nemo. Debitis modi.</p>
+                </div>
+                <div class="col-lg-5 col-12 articles mx-2 article-frontend">
+                    <h2>JavaScript ile ilgili Makale</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt omnis
+                        voluptatem, suscipit velit, officia fugiat enim quis quasi, possimus doloribus voluptate
+                        facere autem xercitationem! Modi dolorem repellendus praesentium esse eum earum
+                        laboriosam magnam, iure, expedita quisquam perspiciatis saepe voluptatem nemo. Debitis
+                        modi, ullam consectetur pariatur hic aliquid libero illum deleniti itaque voluptate! Qui
+                        quidem nihil id numquam a natus provident perferendis veniam. Aperiam consectetur at sit
+                        quos corrupti doloribus id magni aliquam neque quidem.</p>
+                </div>
+                <div class="col-lg-6 col-12 articles article-frontend">
+                    <h2>HTML ile ilgili Makale</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt omnis
+                        voluptatem,
+                        suscipit velit,
+                        officia
+                        fugiat enim quis quasi, possimus doloribus voluptate facere autem exercitationem! Modi
+                        dolorem repellendus
+                        praesentium esse eum earum laboriosam magnam, iure, expedita quisquam perspiciatis saepe
+                        voluptatem nemo.</p>
+                </div>
             </div>
         </main>
-        <footer class="fixed-bottom">
+        <footer class="">
             <div class="bg-menu py-3 my-footer">
                 <div class="container text-center">
                     <span>Bilal Baysal Tarafından Hazırlanmıştır &copy;2023</span>

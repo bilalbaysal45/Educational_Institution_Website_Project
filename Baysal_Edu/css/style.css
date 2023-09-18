@@ -28,7 +28,8 @@ body{
 }
 #menu li:hover{
     background-color: var(--color-menu-bg-lighter);
-    transition: background-color .3s linear .1s;
+    border-radius: 2px;
+    transition: all .3s linear .1s;
 }
 /* #dropdown-profile{
     position: absolute;
@@ -198,6 +199,20 @@ body{
 .indicators button:hover {
     opacity: .7;
 }
+
+.my-blog{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.my-blog .navbar-nav>a{
+    color: var(--color-primary);
+    background-color: var(--color-menu-bg);
+    border-radius: 5px;
+}
+.my-blog .navbar-nav>a:hover{
+    background-color: var(--color-menu-bg-lighter);
+    transition: all .3s linear .1s;
+}
 .my-blog-img{
     object-fit: cover;
     width: 100%;
@@ -208,7 +223,6 @@ body{
     background-color: var(--color-light);
     border: 1px ridge var(--color-secondary);
     margin: 3px auto;
-    height: 100%;
 }
 
 .nav-blog{
@@ -219,7 +233,7 @@ body{
 }
 
 .nav-blog a{
-    width: 150px;
+    width: 125px;
     color: var(--color-orange);
     background-color: var(--color-light);
     margin-left: 2px;
@@ -229,7 +243,7 @@ body{
     color: var(--color-orange);
 }
 .my-active{
-    color: var(--color-primary) !important;
-    background-color: var(--color-body-bg) !important;
+    color: var(--color-orange) !important;
+    background-color: var(--color-menu-bg-lighter) !important;
     border: 1px solid var(--color-light) !important;
 }
