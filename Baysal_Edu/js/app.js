@@ -3,6 +3,8 @@ const slides = document.querySelectorAll(".slide");
 const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
 const articleSqlList = $(".article-sql");
+const mainModal = document.querySelector(".main-modal");
+
 
 let autoSlider = true;
 let intervalTime = 3000;
@@ -242,9 +244,32 @@ $("#side-nav-edu-content").click(() => {
         $("#edu-content").removeClass("d-none");
     }
 });
-// <a id="side-nav-edu-calendar" href="">Eğitim Takvimi</a>
-//                 <a id="side-nav-precondition" href="">Ön Koşul</a>
-//                 <a id="side-nav-certificate" href="">Sertifika</a>
-//                 <a id="side-nav-edu-content" href="">Eğitim İçeriği</a>
+
+/* Modal Burada */
+
+$("#btn-sign-in").click((e) => {
+    e.preventDefault()
+    openModal();
+});
+$("#btn-sign-up").click((e) => {
+    e.preventDefault();
+})
+$(".btn-modal-header-close").click((e) => {
+    e.preventDefault();
+    closeModal();
+});
+mainModal.addEventListener("click", function (event) {
+    if (event.target.classList == "main-modal") {
+        closeModal();
+    }
+})
+function openModal() {
+    $(".main-modal").removeClass("hidden");
+}
+function closeModal() {
+    $(".main-modal").addClass("hidden");
+}
+
+
 
 againInterval();

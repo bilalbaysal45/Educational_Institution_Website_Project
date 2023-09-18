@@ -63,10 +63,10 @@
             <div id="dropdown-profile" class="d-flex justify-content-end">
                 <ul class="profile-items">
                     <li class="profile-item">
-                        <a class="" href="/">Sign In</a>
+                        <a id="btn-sign-in" href="" >Sign In</a>
                     </li>
                     <li class="profile-item">
-                        <a class="" href="/">Sign Up</a>
+                        <a id="btn-sign-up" href="">Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -138,6 +138,32 @@
             </div>
         </footer>
     </div>
+
+        <div class="main-modal hidden">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3 class="modal-header-title">Sign In</h3>
+                    <div class="btn-modal-header-close">&times;</div>
+                </div>
+                <div class="model-content">
+                    <form class="modal-menu rounded-2 p-3 text-white">
+                        <div class="row g-3">
+                            <div class="col-sm-12 col-12">
+                                <label class="form-label">Email:</label>
+                                <input class="form-control" type="email" placeholder="Email">
+                            </div>
+                            <div class="col-sm-12 col-12">
+                                <label class="form-label">Password:</label>
+                                <input class="form-control" type="password" placeholder="Password">
+                            </div>
+                            <div class="col-12 d-grid">
+                                <input type="submit" class="btn btn-outline-warning" value="Sign In">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
 
 
