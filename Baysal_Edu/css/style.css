@@ -1,6 +1,6 @@
 :root {
     --color-primary: #5375e2;
-    --color-secondary: #f65868;
+    --color-secondary: #e3162b;
     --color-menu-bg: #5c616e;
     --color-menu-bg-lighter: #7791a1;
     --color-orange: #f3aa92;
@@ -123,7 +123,7 @@ body {
 
 .general-info {
     width: 75%;
-    height: 200px;
+    height: 300px;
     margin: 15px auto;
     background-color: var(--color-menu-bg);
 }
@@ -156,9 +156,11 @@ body {
     height: 80vh;
     margin: 20px auto;
 }
-.slider div{
+
+.slider div {
     cursor: pointer;
 }
+
 .slide {
     position: absolute;
     top: 0;
@@ -245,6 +247,18 @@ body {
     background-color: var(--color-light);
     border: 1px ridge var(--color-secondary);
     margin: 3px auto;
+    opacity: .8;
+}
+
+.articles h2:hover {
+    color: var(--color-primary);
+}
+
+.articles:hover {
+    background-color: var(--color-menu-bg-lighter);
+    color: var(--color-secondary);
+    opacity: 1;
+    transition: all .2s linear .1s;
 }
 
 .nav-blog {
@@ -273,6 +287,7 @@ body {
 }
 
 /* csharp.html */
+    
 .side-nav {
     height: 100%;
     width: 0;
@@ -295,11 +310,13 @@ body {
     color: var(--color-primary);
     display: block;
     transition: 0.3s;
+    border: 1px dotted var(--color-menu-bg);
 }
 
 .side-nav a:hover {
     background-color: var(--color-menu-bg);
     transition: .5s;
+    transform: scaleX(0.7);
 }
 
 .side-nav .close-btn {
@@ -413,12 +430,78 @@ body {
 .modal-footer {
     text-align: end;
 }
-.modal-menu{
+
+.modal-menu {
     background-color: var(--color-menu-bg-lighter);
 }
+
 .hidden {
     display: none;
 }
-.mb-3{
+
+.mb-3 {
     margin-bottom: 10px;
+}
+
+.my-grid {
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.my-grid-header {
+    border: 1px solid var(--color-orange);
+    color: var(--color-orange);
+    background-color: var(--color-secondary);
+    grid-area: 1 / 1 / 2 / 4;
+}
+.dropdown-edu-animation {
+    animation-name: anime-education-dropdown;
+    animation-duration: 1s;
+}
+
+@keyframes anime-education-dropdown {
+    from {
+        font-size: 0px;
+    }
+
+    50% {
+        font-size: 8px;
+    }
+
+    to {
+        font-size: 16px;
+    }
+}
+
+.navbar-my-animation {
+    animation-name: profile-item-ani;
+    animation-duration: .1s;
+    animation-iteration-count: 8;
+}
+
+@keyframes profile-item-ani {
+    from {
+        transform: translate(-1px, 0px);
+    }
+
+    25% {
+        transform: translate(0px, 1px);
+    }
+
+    50% {
+        transform: translate(1px, 0px);
+    }
+
+    75% {
+        transform: translate(0px, -1px);
+    }
+
+    to {
+        transform: translate(-1px, 0px);
+    }
 }
