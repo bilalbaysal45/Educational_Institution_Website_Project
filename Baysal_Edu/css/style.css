@@ -1,11 +1,10 @@
 :root {
-    --color-primary: #5375e2;
-    --color-secondary: #e3162b;
-    --color-menu-bg: #5c616e;
-    --color-menu-bg-lighter: #7791a1;
-    --color-orange: #f3aa92;
-    --color-light: #ffffff;
-    --color-body-bg: rgb(209, 206, 199);
+    --color-primary: #01427a;
+    --color-secondary: #8dcbe8;
+    --color-menu-bg: #E4F1FF;
+    --color-menu-bg-lighter: #d94075;
+    --color-text: #6c7998;
+    --color-body-bg: #ffffff;
 }
 
 
@@ -18,11 +17,11 @@
 
 body {
     background-color: var(--color-body-bg);
-    /* background-image: url(/images/bg-photo.jpg); */
 }
 
 .bg-menu {
     background-color: var(--color-menu-bg);
+    z-index: 1031;
 }
 
 #menu li>a {
@@ -99,6 +98,12 @@ body {
     padding-top: 5px;
 }
 
+#my-dropdown{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 .home-bg {
     width: 100%;
     height: 80vh;
@@ -126,17 +131,22 @@ body {
     height: 300px;
     margin: 15px auto;
     background-color: var(--color-menu-bg);
+    border: 1px solid black;
+    box-shadow: -5px 10px 35px gray;
+    
 }
 
 .card-my-bg {
     background-color: var(--color-secondary);
-    color: var(--color-orange);
+    color: var(--color-text);
     opacity: .9;
 }
+.card-my-bg:hover{
 
+}
 .general-my-bg {
     background-color: var(--color-secondary);
-    color: var(--color-orange);
+    color: var(--color-text);
     opacity: .9;
 }
 
@@ -173,7 +183,7 @@ body {
 
 .slide h2,
 .slide p {
-    color: var(--color-orange);
+    color: var(--color-text);
 }
 
 .slide img {
@@ -270,18 +280,18 @@ body {
 
 .nav-blog a {
     width: 125px;
-    color: var(--color-orange);
+    color: var(--color-text);
     background-color: var(--color-light);
     margin-left: 2px;
-    border: 1px solid var(--color-orange);
+    border: 1px solid var(--color-text);
 }
 
 .nav-blog a:hover {
-    color: var(--color-orange);
+    color: var(--color-text);
 }
 
 .my-active {
-    color: var(--color-orange) !important;
+    color: var(--color-text) !important;
     background-color: var(--color-menu-bg-lighter) !important;
     border: 1px solid var(--color-light) !important;
 }
@@ -290,17 +300,22 @@ body {
     
 .side-nav {
     height: 100%;
-    width: 0;
+    width: 33px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--color-menu-bg-lighter);
+    background-image: url(/images/sidenav.jpg);
+    object-fit: cover;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    opacity: .5;
 }
-
+.side-nav:hover{
+    opacity: 1;
+    width: 250px;
+}
 .side-nav a {
     padding: 8px 8px 8px 32px;
     margin-top: 40px;
@@ -308,7 +323,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: var(--color-primary);
-    display: block;
+    display: flex;
     transition: 0.3s;
     border: 1px dotted var(--color-menu-bg);
 }
@@ -319,7 +334,7 @@ body {
     transform: scaleX(0.7);
 }
 
-.side-nav .close-btn {
+/* .side-nav .close-btn {
     position: absolute;
     color: var(--color-secondary);
     right: 10px;
@@ -334,16 +349,23 @@ body {
     opacity: .9;
     box-shadow: 0 0 var(--color-secondary);
     transition: all .2s linear .2s;
+} */
+.sidenav-vertical {
+    margin-top: 20px;
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    cursor: pointer;
 }
 
-.side-nav-options {
+/* .side-nav-options {
     font-size: 30px;
     cursor: pointer;
     background-color: var(--color-menu-bg);
     color: var(--color-primary);
     width: 125px;
-}
-
+} */
 /* Modal Sign in */
 
 .box {
@@ -385,7 +407,7 @@ body {
 }
 
 .modal {
-    background-color: var(--color-secondary);
+    background-color: var(--color-menu-bg);
     width: 500px;
     height: 400px;
     padding: 10px 20px;
@@ -454,16 +476,42 @@ body {
     grid-row-gap: 5px;
 }
 .my-grid-header {
-    border: 1px solid var(--color-orange);
-    color: var(--color-orange);
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
     background-color: var(--color-secondary);
     grid-area: 1 / 1 / 2 / 4;
 }
+
 .dropdown-edu-animation {
     animation-name: anime-education-dropdown;
     animation-duration: 1s;
 }
 
+#edu-calendar{
+    animation-name: den;
+    animation-duration: 1s;
+}
+#precondition {
+    animation-name: den;
+    animation-duration: 1s;
+}
+#certificate{
+    animation-name: den;
+    animation-duration: 1s;
+}
+#edu-content {
+    animation-name: den;
+    animation-duration: 1s;
+}
+@keyframes den{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transition: opacity .3s linear .3s;
+    }
+}
 @keyframes anime-education-dropdown {
     from {
         font-size: 0px;

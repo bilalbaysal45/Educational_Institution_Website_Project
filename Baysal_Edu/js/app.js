@@ -180,13 +180,13 @@ $("#btn-all").click((e) => {
 
 });
 
-function openSideNav() {
-    document.getElementById("my-Side-nav").style.width = "250px";
-}
+// function openSideNav() {
+//     document.getElementById("my-Side-nav").style.width = "250px";
+// }
 
-function closeSideNav() {
-    document.getElementById("my-Side-nav").style.width = "0";
-}
+// function closeSideNav() {
+//     document.getElementById("my-Side-nav").style.width = "60px";
+// }
 
 $("#side-nav-edu-calendar").click(() => {
     if($("#edu-calendar").hasClass("d-none")){
